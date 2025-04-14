@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>JobCircuit</title>
+    <link rel="icon" href="https://img.icons8.com/fluency/48/job.png" type="image/png">
+  </head>
+  <body>
+    <header>
+
+      <nav class="navbar navbar-expand-lg section__container nav__container">
+        <div class="container-fluid">
+            <a class="navbar-brand nav__logo" href="/index.html"><span class="job-text">Job</span><span>Circuit</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <!-- Center nav items using d-flex and justify-content-center -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item mx-3">
+                      <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  </li>
+          <li class="nav-item mx-3">
+              <a class="nav-link" href="about.html">About Us</a>
+          </li>
+                  <li class="nav-item mx-3">
+                      <a class="nav-link" href="#service">Services</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                      <a class="nav-link" href="/employer.html">Employers</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                      <a class="nav-link" href="#blog">Blog</a>
+                  </li>
+              </ul>
+              
+                <button class="btn" onclick="window.open('https://wa.me/17064994141', '_blank');">Contact Us</button>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <style>
+        /* Change color of 'Job' text in logo */
+        .nav__logo .job-text {
+            color: white;
+        }
+    
+        /* Change colors of the links */
+        .navbar-nav .nav-link {
+            color: white !important; /* Makes sure text color is white */
+        }
+    
+        .navbar-nav .nav-link:hover {
+            color: #f1f1f1 !important; /* Optional: Hover effect */
+        }
+    </style>
+    
+      
+
+
+
+      <!-- <nav class="section__container nav__container">
+        <div class="nav__logo">Job<span>Circuit</span></div>
+        <ul class="nav__links">
+         <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="#about">About Us</a></li>
+          <li class="link"><a href="#service">Services</a></li>
+          <li class="link"><a href="employer.html">Employers</a></li>
+          <li class="link"><a href="#blog">Blog</a></li>
+        </ul>
+        <button class="btn" onclick="window.open('https://wa.me/17064994141', '_blank');">Contact Us</button>
+      </nav> -->
+      
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h1>Connecting Ambition with Opportunity in Tech</h1>
+          <p>
+            Welcome to a space where ambition meets opportunity in the tech sector. Our mission is to provide tailored support, proactive candidate assessment, and an innovative outlook. We're devoted to helping you excel in the tech landscape. Trust us to guide your journey—take a decisive step toward a rewarding and impactful career in technology.
+          </p>
+          <button class="btn" id="applyButton">Apply Now</button>
+
+          <!-- Modal Form -->
+          <div id="applyModal" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Application Form</h2>
+                  <form id="applicationForm">
+                      <div class="form-group">
+                          <label for="name">Full Name:</label>
+                          <input type="text" id="name" name="name" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="phone">Phone:</label>
+                          <input type="tel" id="phone" name="phone" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="address">Address:</label>
+                          <input type="text" id="address" name="address" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="description">Description:</label>
+                          <textarea id="description" name="description" rows="4" required></textarea>
+                      </div>
+                      <div class="form-group">
+                          <label for="resume">Resume (PDF):</label>
+                          <input type="file" id="resume" name="resume" accept=".pdf" required>
+                      </div>
+                      <button type="submit" class="submit-btn">Submit Application</button>
+                  </form>
+                  <div id="successMessage" style="display: none; text-align: center; padding: 20px;">
+                      <h3 style="color: #4CAF50;">Application Submitted Successfully!</h3>
+                      <p>Thank you for your application. We'll get back to you soon.</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- <div class="header__form">
+          <form>
+            <h4>Book Now</h4>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="text" placeholder="Address" />
+            <input type="text" placeholder="Phone No." />
+            <button class="btn form__btn">Book Appointment</button>
+          </form>
+        </div> -->
+      </div>
+    </header>
+
+    <section class="section__container service__container" id="service">
+      <div class="service__header">
+        <div class="service__header__content">
+          <h2 class="section__header">Our Special service</h2>
+          <p>
+            More than just connecting you with opportunities, we're dedicated to providing unparalleled support, customized to your specific career aspirations in tech.
+          </p>
+        </div>
+        <button class="service__btn" onclick="window.location.href='sms:+17064994141';">Ask A Service</button>
+      </div>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-shield-check-line"></i></span>
+          <h4>Comprehensive Background Checks</h4>
+          <p>
+            We pre-screen candidates with a comprehensive national background check, ensuring you only engage with those who meet our high standards.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+        <div class="service__card">
+          <span><i class="ri-user-line"></i></span> <!-- Change the icon for Interviews -->
+          <h4>Professional Interviews</h4>
+          <p>
+            We conduct thorough and insightful interviews to evaluate candidates' skills, experience, and cultural fit, ensuring the best match for your team.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>        
+        <div class="service__card">
+          <span><i class="ri-history-line"></i></span> <!-- Icon reflecting years of experience -->
+          <h4>20+ Years of Industry Experience</h4>
+          <p>
+            With over two decades of experience in the industry, we are committed to providing unmatched expertise and quality in every aspect of our service.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>        
+      </div>
+    </section>
+
+
+    <section class="section__container service__container" id="service">
+      <div class="service__header">
+        <div class="service__header__content">
+          <h2 class="section__header">Testimonies</h2>
+          <p>
+            Hear How Our Community Is Shaping Careers Through Expertise, Support, and Innovation
+          </p>
+        </div>
+        <button class="service__btn" onclick="window.location.href='sms:+17064994141';">Chat Us</button>
+      </div>
+      <div class="service__grid">
+        <div class="service__card">
+          <span>	<i class="ri-chat-3-line"></i></span>
+          <p>
+            We were overwhelmed and honestly close to giving up. Every recruiter before JobCircuit just sent unqualified leads and wasted our time. But JobCircuit felt different — by the next week, we had three standout candidates who were exactly what we were looking for. The process was smooth, human, and refreshingly efficient. We’ll absolutely partner with JobCircuit again.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+          <h4>Lori Hall - Client, Ohio</h4>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-double-quotes-l"></i></span> <!-- Icon reflecting years of experience -->
+         
+          <p>
+            Finding the right candidate seemed impossible — especially someone with video compression experience in the accounting industry. After struggling with multiple recruiters, we didn’t have high hopes for JobCircuit, but they exceeded all expectations. In just a week, they delivered the perfect candidate, leaving us amazed and rethinking how effective recruitment can really be. CareerInTech is in a league of its own.
+          </p>
+          <h4>Macayla Brooks - Client, Illinois</h4>
+          <!-- <a href="#">Learn More</a> -->
+        </div>       
+        <div class="service__card">
+          <span><i class="ri-message-3-line"></i></span> <!-- Icon reflecting years of experience -->
+         
+          <p>
+            I’ve never been interviewed more thoroughly by a recruiter in my life. Most recruiters just do a quick phone screen, then pass me along to the company. But with JobCircuit, the process was different. They took the time to understand my skills and aspirations. Thanks to JobCircuit, I landed a great job with an amazing company!
+          </p>
+          <h4>Umar Tarik - Client, Georgia</h4>
+          <!-- <a href="#">Learn More</a> -->
+        </div>        
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Job<span>Circuit</span></h3>
+          <p>
+            We are honored to be a part of your career journey, committed to delivering tailored, tech-driven recruitment solutions that connect you with top talent every step of the way.
+          </p>
+          <p>
+            Trust us with your hiring needs, and let us work together to connect you with the best tech talent to drive your business forward.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>About Us</h4>
+          <p><a href="./index.html">Home </a></p>
+          <p><a href="#about">About Us</a></p>
+          <p>Work With Us</p>
+          <p><a href="./employer.html">Employers</a></p>
+          <p>Terms & Conditions</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <p>Search Terms</p>
+          <p>Advance Search</p>
+          <p>Privacy Policy</p>
+          <p>Suppliers</p>
+          <p>Our Stores</p>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <p>
+            <a href="https://www.google.com/maps?q=55+State+Street,+Boston,+MA+02109" target="_blank">
+              <i class="ri-map-pin-2-fill"></i> 55 State Street <br> Boston MA 02109
+          </a>
+          </p>
+          <p><i class="ri-mail-fill"></i> <a href="mailto:remotejobcircuit@outlook.com" style="font-size: 12px;">remotejobcircuit@outlook.com</a></p>
+          <p><i class="ri-message-3-line"></i> <a href="sms:++17064994141">+17064994141</a></p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <p>Copyright © 2020 JobCircuit. All rights reserved.</p>
+          <!-- <div class="footer__socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+</body>
+<script>
+    // Get modal elements
+    const modal = document.getElementById('applyModal');
+    const btn = document.getElementById('applyButton');
+    const span = document.getElementsByClassName('close')[0];
+
+    // When user clicks button, open modal 
+    btn.onclick = function() {
+        modal.style.display = 'block';
+    }
+
+    // When user clicks on (x), close modal
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    // When user clicks anywhere outside modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Form submission handler
+    document.getElementById('applicationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (this.checkValidity()) {
+            // Hide form and show success message
+            this.style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // Close modal after 3 seconds
+            setTimeout(function() {
+                modal.style.display = 'none';
+                // Reset form and show it again for next use
+                document.getElementById('applicationForm').style.display = 'block';
+                document.getElementById('applicationForm').reset();
+                document.getElementById('successMessage').style.display = 'none';
+            }, 3000);
+        } else {
+            // If form is invalid, let browser show validation messages
+            this.reportValidity();
+        }
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</html>
+

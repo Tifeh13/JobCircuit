@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>JobCircuit - Employers</title>
+    <link rel="icon" href="https://img.icons8.com/fluency/48/job.png" type="image/png">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg section__container nav__container">
+        <div class="container-fluid">
+            <a class="navbar-brand nav__logo" href="/index.html"><span class="job-text">Job</span><span>Circuit</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <!-- Center nav items using d-flex and justify-content-center -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item mx-3">
+                      <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                      <a class="nav-link" href="/about.html">About Us</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                      <a class="nav-link" href="#service">Services</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                      <a class="nav-link" href="/employer.html">Employers</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                      <a class="nav-link" href="#blog">Blog</a>
+                  </li>
+              </ul>              
+                <button class="btn" onclick="window.open('https://wa.me/17064994141', '_blank');">Contact Us</button>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <style>
+        /* Change color of 'Job' text in logo */
+        .nav__logo .job-text {
+            color: white;
+        }
+    
+        /* Change colors of the links */
+        .navbar-nav .nav-link {
+            color: white !important; /* Makes sure text color is white */
+        }
+    
+        .navbar-nav .nav-link:hover {
+            color: #f1f1f1 !important; /* Optional: Hover effect */
+        }
+    </style>
+      
+    </header>
+
+    <section class="section__container about__container">
+      <div class="about__content">
+        <p>
+            It's a common frustration with large staffing firms: their recruiters often lack the deep technical understanding needed to truly grasp your specific hiring needs. While they might pick up industry terms, genuine assessment of a candidate's suitability often falls short. Relying on surface-level phone calls or delegating crucial decisions to AI can lead to misfires. The result? Clients waste precious time wading through a pool of unqualified applicants, frequently missing out on top-tier talent that was either overlooked or never even presented.
+        </p>
+        <p>
+            JobCircuit operates on a fundamentally different principle. We're not passive; we proactively identify exceptional candidates. Our Predictive Candidate Targeting™ solution allows us to anticipate where top tech talent is and engage them before our competitors, giving you a significant edge. Forget sifting through endless job board applications. We meticulously hand-select resumes and directly connect with the individuals you need. Our technical recruiters conduct thorough initial screenings to verify essential qualifications. However, that's just the beginning of our process.
+        </p>
+        <br>
+        <button class="btn" id="applyButton">Apply Now</button>
+
+        <!-- Modal Form -->
+        <div id="applyModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Application Form</h2>
+                <form id="applicationForm">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="resume">Resume (PDF):</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+                <div id="successMessage" style="display: none; text-align: center; padding: 20px;">
+                    <h3 style="color: #4CAF50;">Application Submitted Successfully!</h3>
+                    <p>Thank you for your application. We'll get back to you soon.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      </div>
+      <div class="about__image">
+        <img src="/images/emp-1.jpg" alt="about" />
+      </div>
+    </section>
+    <section class="section__container about__container">
+        <div class="about__image">
+            <img src="/images/emp-3.jpg" alt="about" />
+          </div>
+      <div class="about__content">
+        <p>
+          The inefficiency of traditional large staffing agencies in the tech sector is a well-known pain point. Recruiters often lack the genuine technical acumen to truly grasp the nuances of your hiring needs, leading to a disconnect between the candidates presented and the actual requirements. Relying on surface-level assessments or automated filtering frequently results in a time-consuming process of sifting through unsuitable applicants, while the most qualified individuals remain out of reach.
+        </p>
+        <p>
+          JobCircuit breaks this mold with a proactive and technically grounded methodology. Instead of passively waiting for applications, we actively identify and engage top-tier tech talent through our proprietary Predictive Candidate Targeting™ system, giving you a crucial first look. We move beyond the limitations of job postings, meticulously sourcing and directly contacting individuals whose skills and experience align with your specific needs. Our technical recruiters conduct in-depth initial evaluations to ensure a solid foundational match. However, our commitment to delivering exceptional talent goes far beyond this initial screen.
+        </p>
+      </div>
+      
+    </section>
+    <section class="section__container about__container">
+      <div class="about__content">
+        <p>
+          Imagine a hiring process where you're not bogged down by reviewing countless irrelevant applications. The reality with many large staffing agencies is that their recruiters often lack the specialized technical knowledge to truly understand the intricacies of your tech roles. This can lead to a frustrating experience of sifting through candidates who, despite meeting basic keywords, don't possess the deep skills you require. Relying on quick phone screenings or AI-driven shortlisting often misses the mark, leaving you with wasted time and the best talent potentially overlooked.
+        </p>
+        <p>
+          JobCircuit offers a more refined and effective solution. We operate with the understanding that finding the right tech talent requires precision and proactive engagement. Our Predictive Candidate Targeting™ allows us to identify and connect with top professionals before they actively hit the job market, providing you with an exclusive advantage. We move beyond the limitations of traditional job postings, carefully curating and directly reaching out to individuals whose expertise aligns perfectly with your needs. Our technical recruiters conduct thorough initial assessments to ensure a strong foundational fit. But our commitment is to deliver not just qualified candidates, but the right candidates, saving you time and ensuring you secure the best tech talent available.
+        </p>
+      </div>
+      <div class="about__image">
+        <img src="/images/emp-4.jpg" alt="about" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Job<span>Circuit</span></h3>
+          <p>
+            We are honored to be a part of your career journey, committed to delivering tailored, tech-driven recruitment solutions that connect you with top talent every step of the way.
+          </p>
+          <p>
+            Trust us with your hiring needs, and let us work together to connect you with the best tech talent to drive your business forward.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>About Us</h4>
+          <p><a href="./index.html">Home </a></p>
+          <p><a href="#about">About Us</a></p>
+          <p>Work With Us</p>
+          <p><a href="./employer.html">Employers</a></p>
+          <p>Terms & Conditions</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <p>Search Terms</p>
+          <p>Advance Search</p>
+          <p>Privacy Policy</p>
+          <p>Suppliers</p>
+          <p>Our Stores</p>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <p>
+            <a href="https://www.google.com/maps?q=55+State+Street,+Boston,+MA+02109" target="_blank">
+              <i class="ri-map-pin-2-fill"></i> 55 State Street <br> Boston MA 02109
+          </a>
+          <p><i class="ri-mail-fill"></i> <a href="mailto:remotejobcircuit@outlook.com" style="font-size: 12px;">remotejobcircuit@outlook.com</a></p>
+          <p><i class="ri-message-3-line"></i><a href="sms:++17064994141">+17064994141</a></p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <p>Copyright © 2020 JobCircuit. All rights reserved.</p>
+          <!-- <div class="footer__socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    // Get modal elements
+    const modal = document.getElementById('applyModal');
+    const btn = document.getElementById('applyButton');
+    const span = document.getElementsByClassName('close')[0];
+
+    // When user clicks button, open modal 
+    btn.onclick = function() {
+        modal.style.display = 'block';
+    }
+
+    // When user clicks on (x), close modal
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    // When user clicks anywhere outside modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Form submission handler
+    document.getElementById('applicationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (this.checkValidity()) {
+            // Hide form and show success message
+            this.style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // Close modal after 3 seconds
+            setTimeout(function() {
+                modal.style.display = 'none';
+                // Reset form and show it again for next use
+                document.getElementById('applicationForm').style.display = 'block';
+                document.getElementById('applicationForm').reset();
+                document.getElementById('successMessage').style.display = 'none';
+            }, 3000);
+        } else {
+            // If form is invalid, let browser show validation messages
+            this.reportValidity();
+        }
+    });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</html>
