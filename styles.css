@@ -229,8 +229,8 @@ body {
 header {
   background-image: linear-gradient(
       to right,
-      rgba(251, 146, 60, 0.7),  /* #fb923c with 70% opacity */
-      rgba(251, 146, 60, 0.5)   /* #fb923c with 50% opacity */
+      rgba(18, 172, 142, 0.7),  /* Lighter and more transparent */
+      rgba(18, 172, 142, 0.5)
     ),
     url("./images/home.jpg");
   background-position: center center;
