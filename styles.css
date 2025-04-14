@@ -281,8 +281,8 @@ header {
 .header__container h1 {
   margin-bottom: 1rem;
   max-width: 800px;
-  font-size: 3.5rem;
-  line-height: 4rem;
+  font-size: 2rem;
+  line-height: 3rem;
   color: var(--white);
 }
 
