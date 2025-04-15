@@ -1,0 +1,50 @@
+.privacy-container {
+  max-width: var(--max-width);
+  margin: 2rem auto 4rem;
+  padding: 0 1rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+.privacy-container h1,
+.privacy-container h2,
+.privacy-container h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.privacy-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.privacy-container h2 {
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+}
+.privacy-container h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+.privacy-container p,
+.privacy-container ul {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+.privacy-container ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+@media (max-width: 600px) {
+  .privacy-container {
+    margin: 1rem 1rem 3rem;
+    font-size: 0.9rem;
+  }
+  .privacy-container h1 {
+    font-size: 2rem;
+  }
+  .privacy-container h2 {
+    font-size: 1.5rem;
+  }
+  .privacy-container h3 {
+    font-size: 1.1rem;
+  }
+}
